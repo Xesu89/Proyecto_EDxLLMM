@@ -1,0 +1,96 @@
++---------------------------------+
+|          API Star Wars          |
++---------------------------------+
+
++-------------------------------------------+
+|                 Peliculas                 |
++-------------------------------------------+
+| - id: int                                 |
+| - titulo: String                          |
+| - numEpisodio: int                        |
+| - rastreoApertura: String                 |
+| - fechaLanzamiento: Date                  |
+| - director: String                        |    
+| - productor: String                       |
+| - personajes: Array<Personajes>           |
+| - planetas: Array<Planetas>               |
+| - navesEspaciales: Array<NavesEspaciales> |
+| - vehiculos: Array<Vehiculos>             |
+| - especies: Array<Especies>               |
+| - creacion: String                        |
+| - edicion: String                         |
+| - url: String                             |
++-------------------------------------------+
+
++-------------------------------------------+
+|                Personajes                 |
++-------------------------------------------+   
+| - id: int                                 |            
+| - nombre: String                          |
+| - colorPelo: String                       |
+| - colorPiel: String                       |
+| - colorOjos: String                       |
+| - anyoCumple: String                      |
+| - genero: String                          |
+| - peso: int                               |    
+| - masa: int                               |
+| - mundoNatal: Planetas                    |
+| - peliculas: Array<Peliculas>             |
+| - especie: Especies                       |
+| - vehiculos: Array<Vehiculos>             |
+| - navesEspaciales: Array<NavesEspaciales> |
+| - creacion: String                        |
+| - edicion: String                         |
+| - url: String                             |
++-------------------------------------------+
+
++---------------------------------+
+|            Planetas             |
++---------------------------------+
+| - id: int                       |
+| - nombre: String                |
+| - periodoRotacion: int          |
+| - periodoOrbita: int            |
+| - diametro: int                 |
+| - clima: String                 |
+| - gravedad: String              |     
+| - terreno: String               |
+| - superficieAgua: int           |
+| - population: long              |
+| - residentes: Array<Personajes> |
+| - peliculas: Array<Peliculas>   |
+| - creacion: String              |
+| - edicion: String               |
+| - url: String                   |
++---------------------------------+
+
++---------------------------------+
+|            Especies             |
++---------------------------------+
+| - id: int                       |
+| - nombre: String                |
+| - clasificacion: String         |
+| - lenguaje: String              |
++---------------------------------+
+
++---------------------------------+
+|        NavesEspaciales          |
++---------------------------------+
+| - id: int                       |
+| - nombre: String                |
+| - modelo: String                | 
+| - fabricante: String            |
+| - equipo: int                   |
+| - pasajeros: int                |
++---------------------------------+
+
++---------------------------------+
+|            Vehiculos            |
++---------------------------------+
+| - id: int                       |
+| - nombre: String                |
+| - modelo: String                |
+| - fabricante: String            | 
+| - equipo: int                   |
+| - pasajeros: int                |
++---------------------------------+
